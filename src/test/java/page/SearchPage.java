@@ -36,11 +36,13 @@ public class SearchPage {
 	public boolean getSearchResults(String searchKeyword) {
 		boolean isFound = false;
 		searchBox.sendKeys(searchKeyword);
+		//Check for search container not empty
 		if (!searchResultsContainer.isEmpty()) 
 		{
 			for (WebElement s : searchResultsContainer)
 			{
 				String result = s.getText();
+				//exact macth result
 				if (result.equalsIgnoreCase(searchKeyword)) {
 					s.click();
 					isFound = searchResult.isDisplayed();
@@ -50,6 +52,7 @@ public class SearchPage {
 			for (WebElement s : searchResultsContainer)
 			{
 				String result = s.getText();
+				//partail match result
 				if (result.contains(searchKeyword)) 
 				{
 					s.click();
@@ -59,6 +62,7 @@ public class SearchPage {
 			}
 		}
 		else {
+			//search container is empty
 			searchBtn.click();
 			isFound = searchResult.isDisplayed();
 		}
