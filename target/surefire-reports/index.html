@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\admin\Downloads\Binder-sa-submit\workspace\amazon\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.userflow.UserFlow" class="method navigator-link" hash-for-method="testSearchProduct(keyboard, 1)">testSearchProduct(keyboard, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.userflow.UserFlow" class="method navigator-link" hash-for-method="testSearchProduct(mouse, 3)">testSearchProduct(mouse, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.login.IncorrectEmailLogin" class="method navigator-link" hash-for-method="incorrectEmailLogin">incorrectEmailLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.login.IncorrectPhoneLogin" class="method navigator-link" hash-for-method="testIncorrectPhoneLogin">testIncorrectPhoneLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.login.MissingEmailLogin" class="method navigator-link" hash-for-method="testMissingEmaildLogin">testMissingEmaildLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.login.MissingPasswordLogin" class="method navigator-link" hash-for-method="testMissingPasswordLogin">testMissingPasswordLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.search.Search" class="method navigator-link" hash-for-method="testSearchProduct(uuououoi)">testSearchProduct(uuououoi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.search.Search" class="method navigator-link" hash-for-method="testSearchProduct(123)">testSearchProduct(123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.search.Search" class="method navigator-link" hash-for-method="testSearchProduct(1 + mobile)">testSearchProduct(1 + mobile)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.search.Search" class="method navigator-link" hash-for-method="testSearchProduct(iphone)">testSearchProduct(iphone)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.search.Search" class="method navigator-link" hash-for-method="testSearchProduct(---)">testSearchProduct(---)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.login.ValidPhoneNumberLogin" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">script.userflow.UserFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(keyboard, 1)">
+                  </a> <!-- testSearchProduct(keyboard, 1) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(keyboard,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at script.userflow.UserFlow.testSearchProduct(UserFlow.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(mouse, 3)">
+                  </a> <!-- testSearchProduct(mouse, 3) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(mouse,3)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 3
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page.ResultPage.setQuantity(ResultPage.java:92)
+	at script.userflow.UserFlow.testSearchProduct(UserFlow.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.login.IncorrectPhoneLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIncorrectPhoneLogin">
+                  </a> <!-- testIncorrectPhoneLogin -->
+                  <span class="method-name">testIncorrectPhoneLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.login.IncorrectEmailLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="incorrectEmailLogin">
+                  </a> <!-- incorrectEmailLogin -->
+                  <span class="method-name">incorrectEmailLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.login.MissingPasswordLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingPasswordLogin">
+                  </a> <!-- testMissingPasswordLogin -->
+                  <span class="method-name">testMissingPasswordLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.login.MissingEmailLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingEmaildLogin">
+                  </a> <!-- testMissingEmaildLogin -->
+                  <span class="method-name">testMissingEmaildLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.search.Search</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(uuououoi)">
+                  </a> <!-- testSearchProduct(uuououoi) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(uuououoi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(123)">
+                  </a> <!-- testSearchProduct(123) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(1 + mobile)">
+                  </a> <!-- testSearchProduct(1 + mobile) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(1 + mobile)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(iphone)">
+                  </a> <!-- testSearchProduct(iphone) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(iphone)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct(---)">
+                  </a> <!-- testSearchProduct(-) -->
+                  <span class="method-name">testSearchProduct</span>
+                  <span class="parameters">(---)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.login.ValidPhoneNumberLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\admin\Downloads\Binder-sa-submit\workspace\amazon\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;env&quot; value=&quot;qa_env.properties&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;script.login&quot;/&gt;
+      &lt;package name=&quot;script.search&quot;/&gt;
+      &lt;package name=&quot;script.userflow&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;script.login.IncorrectEmailLogin&quot;/&gt;
+      &lt;class name=&quot;script.login.IncorrectPhoneLogin&quot;/&gt;
+      &lt;class name=&quot;script.login.MissingEmailLogin&quot;/&gt;
+      &lt;class name=&quot;script.login.MissingPasswordLogin&quot;/&gt;
+      &lt;class name=&quot;script.login.ValidPhoneNumberLogin&quot;/&gt;
+      &lt;class name=&quot;script.search.Search&quot;/&gt;
+      &lt;class name=&quot;script.userflow.UserFlow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSearchProduct')
+data.setCell(0, 2, 'script.userflow.UserFlow')
+data.setCell(0, 3, 14843);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSearchProduct')
+data.setCell(1, 2, 'script.search.Search')
+data.setCell(1, 3, 12317);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSearchProduct')
+data.setCell(2, 2, 'script.userflow.UserFlow')
+data.setCell(2, 3, 11872);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSearchProduct')
+data.setCell(3, 2, 'script.search.Search')
+data.setCell(3, 3, 11499);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSearchProduct')
+data.setCell(4, 2, 'script.search.Search')
+data.setCell(4, 3, 10507);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSearchProduct')
+data.setCell(5, 2, 'script.search.Search')
+data.setCell(5, 3, 9670);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSearchProduct')
+data.setCell(6, 2, 'script.search.Search')
+data.setCell(6, 3, 8938);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'incorrectEmailLogin')
+data.setCell(7, 2, 'script.login.IncorrectEmailLogin')
+data.setCell(7, 3, 6331);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testValidLogin')
+data.setCell(8, 2, 'script.login.ValidPhoneNumberLogin')
+data.setCell(8, 3, 5798);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testMissingPasswordLogin')
+data.setCell(9, 2, 'script.login.MissingPasswordLogin')
+data.setCell(9, 3, 4864);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testIncorrectPhoneLogin')
+data.setCell(10, 2, 'script.login.IncorrectPhoneLogin')
+data.setCell(10, 3, 4372);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testMissingEmaildLogin')
+data.setCell(11, 2, 'script.login.MissingEmailLogin')
+data.setCell(11, 3, 3721);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.login.IncorrectPhoneLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.login.MissingPasswordLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.userflow.UserFlow</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.login.MissingEmailLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.search.Search</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.login.ValidPhoneNumberLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.login.IncorrectEmailLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.login.IncorrectEmailLogin.incorrectEmailLogin() throws java.lang.InterruptedExcep...)</span>
+                <span class="method-start">776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">incorrectEmailLogin</span>
+                <span class="method-start">6930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=incorrectEmailLogin status=SUCCESS method=IncorrectEmailLogin.incorrectEmailLogin()...)</span>
+                <span class="method-start">13265 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.search.Search</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.search.Search.testSearchProduct(java.lang.String), qa_env.properties)</span>
+                <span class="method-start">13281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchProduct(iphone)</span>
+                <span class="method-start">17502 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=SUCCESS method=Search.testSearchProduct(java.lang.String)[...)</span>
+                <span class="method-start">28010 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.search.Search.testSearchProduct(java.lang.String), qa_env.properties)</span>
+                <span class="method-start">28294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchProduct(123)</span>
+                <span class="method-start">32015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=SUCCESS method=Search.testSearchProduct(java.lang.String)[...)</span>
+                <span class="method-start">43515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.search.Search.testSearchProduct(java.lang.String), qa_env.properties)</span>
+                <span class="method-start">43861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchProduct(1 + mobile)</span>
+                <span class="method-start">47135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=SUCCESS method=Search.testSearchProduct(java.lang.String)[...)</span>
+                <span class="method-start">59452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.search.Search.testSearchProduct(java.lang.String), qa_env.properties)</span>
+                <span class="method-start">59748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchProduct(---)</span>
+                <span class="method-start">63475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=SUCCESS method=Search.testSearchProduct(java.lang.String)[...)</span>
+                <span class="method-start">73146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.search.Search.testSearchProduct(java.lang.String), qa_env.properties)</span>
+                <span class="method-start">73397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchProduct(uuououoi)</span>
+                <span class="method-start">77299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=SUCCESS method=Search.testSearchProduct(java.lang.String)[...)</span>
+                <span class="method-start">86238 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.userflow.UserFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.userflow.UserFlow.testSearchProduct(java.lang.String,java.lang.String), qa_env.pr...)</span>
+                <span class="method-start">86525 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSearchProduct(keyboard, 1)</span>
+                <span class="method-start">89369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=FAILURE method=UserFlow.testSearchProduct(java.lang.String...)</span>
+                <span class="method-start">101250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.userflow.UserFlow.testSearchProduct(java.lang.String,java.lang.String), qa_env.pr...)</span>
+                <span class="method-start">101984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSearchProduct(mouse, 3)</span>
+                <span class="method-start">105900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testSearchProduct status=FAILURE method=UserFlow.testSearchProduct(java.lang.String...)</span>
+                <span class="method-start">120748 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.login.IncorrectPhoneLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.login.IncorrectPhoneLogin.testIncorrectPhoneLogin() throws java.lang.InterruptedE...)</span>
+                <span class="method-start">121236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testIncorrectPhoneLogin</span>
+                <span class="method-start">124814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testIncorrectPhoneLogin status=SUCCESS method=IncorrectPhoneLogin.testIncorrectPhon...)</span>
+                <span class="method-start">129187 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.login.MissingEmailLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.login.MissingEmailLogin.testMissingEmaildLogin() throws java.lang.InterruptedExce...)</span>
+                <span class="method-start">129188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMissingEmaildLogin</span>
+                <span class="method-start">133114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testMissingEmaildLogin status=SUCCESS method=MissingEmailLogin.testMissingEmaildLog...)</span>
+                <span class="method-start">136836 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.login.MissingPasswordLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.login.MissingPasswordLogin.testMissingPasswordLogin() throws java.lang.Interrupte...)</span>
+                <span class="method-start">136837 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMissingPasswordLogin</span>
+                <span class="method-start">140411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testMissingPasswordLogin status=SUCCESS method=MissingPasswordLogin.testMissingPass...)</span>
+                <span class="method-start">145275 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.login.ValidPhoneNumberLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(public void script.login.ValidPhoneNumberLogin.testValidLogin() throws java.lang.InterruptedExceptio...)</span>
+                <span class="method-start">145276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">149019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition([TestResult name=testValidLogin status=SUCCESS method=ValidPhoneNumberLogin.testValidLogin()[pri:1, ...)</span>
+                <span class="method-start">154818 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.login.IncorrectEmailLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">publishReport</span>
+                <span class="method-start">155190 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

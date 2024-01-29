@@ -1,0 +1,11 @@
+
+<suite name="Suite">
+  <test  name="Test">
+	  <parameter name="env" value="qa_env.properties"/>
+    <packages>
+		<package name="script.login" />
+		<package name="script.search" />
+		<package name="script.userflow"/>
+    </packages>
+  </test> 
+</suite> 
