@@ -27,7 +27,7 @@ Features
 # Installation
    1. Clone the repository
       
-           git clone clone url
+           git clone https://github.com/Shwethakh1/amazon.git
       
    3. Install
       
